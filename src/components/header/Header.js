@@ -1,9 +1,16 @@
 import React from 'react';
+import { image } from '@Assets/img';
+import {
+  HeaderWrapper,
+  Image,
+  Title,
+} from './styles';
 
 const Header = () => (
-  <div>
-    Header component
-  </div>
+  <HeaderWrapper>
+    <Image src={image.reduxFormIcon} />
+    <Title>Form Validation UI</Title>
+  </HeaderWrapper>
 );
 
 export default Header;

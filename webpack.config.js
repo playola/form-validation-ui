@@ -8,6 +8,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
+      },
+      {
+        test: /\.(jpe?g|png|svg)$/,
+        use: ['url-loader']
       }
     ]
   },
@@ -16,8 +20,6 @@ module.exports = {
     alias: {
       '@Assets': path.resolve(__dirname, './src/assets'),
       '@Components': path.resolve(__dirname, './src/components'),
-      '@Containers': path.resolve(__dirname, './src/containers'),
-      '@Store': path.resolve(__dirname, './src/store'),
       '@Styles': path.resolve(__dirname, './src/styles'),
     },
   },

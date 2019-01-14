@@ -1,5 +1,7 @@
-const WHITE = '#fff';
+const REDUX_FORM = '#007FC3';
+const REDUX_FORM_LIGHT = '#00E1FF';
 
 export const theme = {
-  primary: WHITE,
+  primary: REDUX_FORM,
+  secondary: REDUX_FORM_LIGHT,
 };
