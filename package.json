@@ -1,0 +1,42 @@
+{
+  "name": "form-validation-ui",
+  "version": "1.0.0",
+  "description": "Form Validation UI with Redux Form",
+  "main": "src/index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "npm run webpack-dev-server -- --mode development --watch",
+    "prod": "npm run webpack -- --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playola/form-validation-ui.git"
+  },
+  "author": "playola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/playola/form-validation-ui/issues"
+  },
+  "homepage": "https://github.com/playola/form-validation-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-form": "^8.1.0",
+    "styled-components": "^4.1.3"
+  }
+}
