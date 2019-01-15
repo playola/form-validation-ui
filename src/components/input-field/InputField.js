@@ -36,16 +36,16 @@ const FloatingLabel = styled.label`
 
   ${Input}:focus + & {
     font-size: 12px;
-    padding-top: 3px;
-    top: -18px;
-    left: 0;
+    padding: 0 5px;
+    top: -8px;
+    background-color: white;
   }
 
   ${Input}:valid + & {
     font-size: 12px;
-    padding-top: 3px;
-    top: -18px;
-    left: 0;
+    padding: 0 5px;
+    top: -8px;
+    background-color: white;
   }
 `;
 
@@ -59,7 +59,6 @@ const InputField = ({
   <InputFieldWrapper>
     <Input
       type={type}
-      placeholder={placeholder}
       pattern={pattern}
       minLength={minLength}
       maxLength={maxLength}
@@ -80,7 +79,7 @@ InputField.propTypes = {
 InputField.defaultProps = {
   type: 'text',
   placeholder: 'Type here',
-  pattern: '^[a-zA-Z0-9_.-]*$',
+  pattern: '.*',
   minLength: '1',
   maxLength: '20',
 };
