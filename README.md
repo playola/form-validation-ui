@@ -2,7 +2,7 @@
 
 Form validation UI using `redux-form` library. The project was bootstrapped using `npm init`, and tested in the latest version of Chrome.
 
-See live demo here: https://playola.github.io/form-validation-ui
+### [Live Example](https://playola.github.io/form-validation-ui)
 
 ## Core Libraries:
 * React
