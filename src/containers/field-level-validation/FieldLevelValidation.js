@@ -1,10 +1,11 @@
 import React from 'react';
-import { InputField } from '@Components';
+import { InputField, Title } from '@Components';
 
 const FieldLevelValidation = () => (
   <div>
-    <span>TODO: Field Level Validation</span>
-    <InputField />
+    <Title innerTitle>Form Level Validation</Title>
+    <InputField type="type" placeholder="Username" />
+    <InputField type="password" placeholder="Password" />
   </div>
 );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Title } from '@Components';
 import reduxFormIcon from '@Assets/img/redux-form-icon.png';
 
 const HeaderWrapper = styled.div`
@@ -11,10 +12,6 @@ const HeaderWrapper = styled.div`
 
 const Image = styled.img`
   width: 100px;
-`;
-
-const Title = styled.h1`
-  color: ${({ theme }) => theme.primary};
 `;
 
 export const Header = () => (

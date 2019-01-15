@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 const InputFieldWrapper = styled.div`
   position: relative;
+  margin: 10px 0;
 `;
 
 const Input = styled.input`${({ theme }) => css`
@@ -33,13 +35,27 @@ const FloatingLabel = styled.label`
     padding-top: 3px;
     top: 0;
   }
+
+  ${Input}:valid + & {
+    font-size: 12px;
+    padding-top: 3px;
+    top: 0;
+  }
 `;
 
-const InputField = () => (
+const InputField = ({
+  type,
+  placeholder,
+}) => (
   <InputFieldWrapper>
-    <Input placeholder="Username" />
-    <FloatingLabel>Username</FloatingLabel>
+    <Input type={type} placeholder={placeholder} required />
+    <FloatingLabel>{ placeholder }</FloatingLabel>
   </InputFieldWrapper>
 );
+
+InputField.propTypes = {
+  type: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+};
 
 export default InputField;
