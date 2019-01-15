@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "Form Validation UI with Redux Form",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playola/form-validation-ui.git"
+  },
+  "author": "playola",
+  "homepage": "https://github.com/playola/form-validation-ui#readme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/playola/form-validation-ui/issues"
+  },
   "scripts": {
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
@@ -10,18 +20,16 @@
     "prod": "npm run webpack -- --mode production",
     "predeploy": "npm run prod",
     "deploy": "gh-pages -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "precommit": "lint-staged"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/playola/form-validation-ui.git"
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint -- --fix",
+      "git add"
+    ]
   },
-  "author": "playola",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/playola/form-validation-ui/issues"
-  },
-  "homepage": "https://github.com/playola/form-validation-ui#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
@@ -34,6 +42,8 @@
     "eslint-plugin-react": "^7.12.3",
     "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",

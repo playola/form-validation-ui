@@ -11,9 +11,9 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|svg)$/,
-        use: ['url-loader']
-      }
-    ]
+        use: ['url-loader'],
+      },
+    ],
   },
   resolve: {
     extensions: ['*', '.js', '.jsx'],
@@ -26,6 +26,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-    })
+    }),
   ],
 };
