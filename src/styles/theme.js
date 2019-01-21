@@ -1,7 +1,14 @@
-const REDUX_FORM = '#007FC3';
-const REDUX_FORM_LIGHT = '#00E1FF';
+const BLUE = '#007FC3';
+const WHITE = '#FFF';
 
 export const theme = {
-  primary: REDUX_FORM,
-  secondary: REDUX_FORM_LIGHT,
+  color: {
+    primary: BLUE,
+    secondary: WHITE,
+  },
+  breakpoint: {
+    desktop: 1024,
+    tablet: 768,
+    mobile: 480,
+  },
 };

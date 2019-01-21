@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Header } from '@Components';
-import { FieldLevelValidation } from './field-level-validation';
+import FieldLevelValidation from './field-level-validation';
 
 const ValidationsWrapper = styled.div`
   padding: 20px;

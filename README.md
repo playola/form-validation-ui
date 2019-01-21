@@ -1,14 +1,13 @@
 # Form Validation UI
 
-Form validation UI using `redux-form` library. The project was bootstrapped using `npm init`, and tested in the latest version of Chrome.
+Form validation UI using `formik` library. The project was bootstrapped using `npm init`, and tested in the latest version of Chrome.
 
-### [Live Example](https://playola.github.io/form-validation-ui)
+### [Live Demo](https://playola.github.io/form-validation-ui)
 
 ## Core Libraries:
 * React
+* Formik
 * Styled Components
-* Redux
-* Redux Form
 
 ## Start here:
 ```
@@ -35,4 +34,6 @@ yarn run deploy
 Now, we can see the new changes from `master` on the live demo.
 
 ## References:
-* https://redux-form.com
+* https://jaredpalmer.com/formik/docs
+* https://medium.com/@rossbulat/formik-for-react-introduction-to-form-management-done-right-971889b40f9f
+* https://hackernoon.com/painless-react-forms-with-formik-e61b70473c60

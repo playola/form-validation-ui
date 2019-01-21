@@ -26,6 +26,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-styled-components": "^1.10.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -40,13 +41,11 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "formik": "^1.4.2",
     "package.json": "^2.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-redux": "^6.0.0",
-    "redux": "^4.0.1",
-    "redux-form": "^8.1.0",
     "styled-components": "^4.1.3"
   }
 }

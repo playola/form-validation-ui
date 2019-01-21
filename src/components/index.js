@@ -1,3 +1,3 @@
-export { Header } from './header';
-export { InputField } from './input-field';
-export { Title } from './title';
+export { default as Button } from './button';
+export { default as Header } from './header';
+export { default as InputField } from './input-field';
