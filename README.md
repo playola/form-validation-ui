@@ -1,5 +1,4 @@
 # Form Validation UI
-
 > Form validation using `formik` and `react-hook-form`.
 
 The project was bootstrapped using `npm init`, and tested in the latest version of Chrome.
@@ -25,22 +24,9 @@ The project was bootstrapped using `npm init`, and tested in the latest version 
 
 See http://localhost:8080
 
-## GitHub Pages Deploy:
+## GitHub pages deploy:
 
-GitHub Pages take the code from `gh-pages` branch. When a change is merged into `master` branch, we need to merge `master` into `gh-pages`, and deploy the application into https://playola.github.io/form-validation-ui/:
-
-```
-  // ...
-  // After a merge into master branch
-
-  git checkout gh-pages
-
-  git merge master
-
-  npm run deploy
-```
-
-Now, we can see the new changes from `master` on the live demo.
+We automated the deploy to GitHub pages using TravisCI. After the merge to master, we will trigger the pipeline that deploys automatically to GitHub pages. Finally, we will see the new changes from `master` on the live demo.
 
 ## References:
 
