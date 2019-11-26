@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Header } from '@Components';
-import FieldLevelValidation from './field-level-validation';
+import Formik from './formik';
+import ReactHookForm from './react-hook-form';
 
 const ValidationsWrapper = styled.div`
   padding: 20px;
@@ -11,7 +12,8 @@ const App = () => (
   <div>
     <Header />
     <ValidationsWrapper>
-      <FieldLevelValidation />
+      <Formik />
+      <ReactHookForm />
     </ValidationsWrapper>
   </div>
 );

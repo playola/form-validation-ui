@@ -2,7 +2,8 @@
   "extends": "airbnb",
   "globals": {
     "window": true,
-    "document": true
+    "document": true,
+    "alert": true
   },
   "rules": {
     "import/no-unresolved": "off",

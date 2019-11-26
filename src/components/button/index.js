@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 
-const Button = styled.button`${({ theme }) => css`
+const Button = styled.button`${({ theme, isFormik = false }) => css`
   width: 100%;
   padding: 15px 10px;
   border-radius: 3px;
-  background: ${theme.color.primary};
-  color: ${theme.color.secondary};
+  background: ${isFormik ? theme.color.formikPrimary : theme.color.reactHookFormPrimary};
+  color: ${isFormik ? theme.color.formikSecondary : theme.color.reactHookFormSecondary};
   font-size: 16px;
   outline: none;
   border: none;

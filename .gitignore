@@ -1,6 +1,6 @@
-# Dependencies
+# dependencies
 /node_modules
 
-# Build
+# build
 /dist
 /build
